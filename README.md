@@ -65,3 +65,10 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 "# Traning-Suizz-1" 
+
+## API Testing with Postman
+
+You can download and import the Postman collection to test the API endpoints.
+
+- [Download Postman Collection]("My_Projects\apitoturail\ApiToturail.postman_collection.json")
+
