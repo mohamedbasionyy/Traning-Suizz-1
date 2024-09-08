@@ -1,0 +1,44 @@
+
+services:
+    app:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: laravelapp
+        container_name: laravelapp
+        restart: unless-stopped
+        working_dir: /var/www
+        volumes:
+            - ./:/var/www
+        networks:
+            - app-network
+        depends_on:
+            - mysqldb    # This must match the db service name
+        ports:
+            - "8000:8000"
+
+
+    mysqldb:
+        image: mysql:8.0
+        container_name: mysqldb
+        restart: unless-stopped
+        environment:
+            MYSQL_ROOT_PASSWORD: password
+            MYSQL_DATABASE: categories   # Match with .env
+            MYSQL_USER: root
+            MYSQL_PASSWORD: password
+
+        ports:
+            - "33066:3306"
+        volumes:
+            - dbdata:/var/lib/mysql
+        networks:
+            - app-network
+
+networks:
+    app-network:
+        driver: bridge
+
+volumes:
+    dbdata:
+        driver: local
