@@ -1,3 +1,4 @@
+[ApiToturail.postman_collection.json](https://github.com/user-attachments/files/16922623/ApiToturail.postman_collection.json)
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -70,5 +71,5 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 You can download and import the Postman collection to test the API endpoints.
 
-- [Download Postman Collection]("My_Projects\apitoturail\ApiToturail.postman_collection.json")
+- [Download Postman Collection](ApiToturail.postman_collection.json)
 
