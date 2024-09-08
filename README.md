@@ -70,5 +70,5 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 You can download and import the Postman collection to test the API endpoints.
 
-- [Download Postman Collection]("ApiToturail.postman_collection.json")
+- [Download Postman Collection](ApiToturail.postman_collection.json)
 
