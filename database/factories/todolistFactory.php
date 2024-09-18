@@ -17,7 +17,9 @@ class todolistFactory extends Factory
     public function definition(): array
     {
         return [
-            'name'=>$this->faker->sentence
+            'name'=>$this->faker->sentence,
+            'description'=>$this->faker->paragraph,
+            'due_date'=>$this->faker->date(),
         ];
     }
 }

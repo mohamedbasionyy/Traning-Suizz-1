@@ -1,5 +1,5 @@
 # Use the official PHP 8.1 image as the base image
-FROM php:8.0
+FROM php:8.2
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
@@ -33,5 +33,3 @@ RUN chown -R www-data:www-data /var/www
 EXPOSE 8000
 CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8000"]
 
-EXPOSE 3306
-CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=33066"]
